@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+html, body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #1A1A1A 85.06%, #140670 112.6%);
+
+    
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  @font-face {
+    font-family: myFirstFont;
+    src: url(impact.ttf);
+  }
+.nav-bar{
+  background: #191919;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #ffff;
+}
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #191919;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #ffff;
+    padding: 0px 50px 0px 50px;
+  }
+
+
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: #999999;
+    margin-right: 0;
+    
+}
+  
+  .nav-list li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: #999999;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0px 5px 0px 5px;
+  }
+  .nav-list li a:hover{
+    color: #8EBDE9;
+  }
+.right-nav{
+ justify-content: flex-end;
+}
+.left-nav{
+ display: flex;
+
+}
+.fa{
+  transition: all 0.3s ease 0s;
+  list-style: none;
+  text-decoration: none;
+  margin: 10px;
+  color: #999999;
+  width: 24.98px;
+  height: 24.98px;
+}
+.fa:hover{
+  color: #8EBDE9;
+}
+.middle-nav h1{
+  font-size: 40px;
+  font-weight: 400;
+  font-family: myFirstFont;
+  letter-spacing: 1.5px;
+  /* letter-spacing: 20px; */
+
+}
+
+                                /* END OF NAV BAR SECTION */                
