@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #1A1A1A 85.06%, #140670 112.6%);
+  padding: 0;
+  margin: 0;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(impact.ttf);
+}
+
+.nav-bar {
+  background: #191919;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #ffff;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #191919;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #ffff;
+  padding: 0px 50px 0px 50px;
+}
+
+.icon {
+  font-size: 17px;
+}
+
+/* .right-navInner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.nav-list {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  color: #999999;
+  margin-right: 0;
+
+}
+
+.nav-list li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #999999;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  margin: 0px 5px 0px 5px;
+}
+
+.nav-list li a:hover {
+  color: #8EBDE9;
+}
+
+.right-nav {
+  justify-content: flex-end;
+}
+
+.left-nav {
+  display: flex;
+
+}
+
+.fa {
+  transition: all 0.3s ease 0s;
+  list-style: none;
+  text-decoration: none;
+  margin: 10px;
+  color: #999999;
+  width: 24.98px;
+  height: 24.98px;
+}
+
+.fa:hover {
+  color: #8EBDE9;
+}
+
+.middle-nav h1 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: myFirstFont;
+  letter-spacing: 1.5px;
+  /* letter-spacing: 20px; */
+
+}
+
+/* END OF NAV BAR SECTION */
+.serviceContainer {
+  margin-top: 40px;
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  justify-content: space-between;
+  margin: 0 110px 0 110px;
+}
+
+.serviceDetail {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+img {
+  height: 140px;
+  width: 140px;
+  border-radius: 10px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin-top: 30px;
+}
+/* .hamburgerContainer .hamburger{
+  display: block;
+} */
+
+@media (max-width: 300px) {
+  .serviceCard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .serviceDetail {
+    display: none;
+    /* flex-direction: column;
+      color: white; */
+  }
+
+  /* .servicePhoto::before {
+    content: attr(data-before);
+    position: absolute;
+    align-items: center;
+    top: 150px;
+    left: 14px;
+    height: 240px;
+    width: 270px; */
+    /* top: 50%;
+    left: 35%; */
+    /* transform: translate(-50% -50%); */
+    /* border-radius: 40px;
+    color: #ffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: auto; */
+    /* padding: 100px 100px; */
+    /* opacity: 0;
+    transition: .3s;
+    transition-delay: .2s;
+    z-index: 1;
+  } */
+  /* .servicePhoto:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    border-radius: 0px;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+  } */
+  
+/* .servicePhoto:hover::after {
+  height: 100%;
+}
+
+.servicePhoto:hover::before {
+  margin-top: 0;
+  opacity: 2;
+} */
+
+ img {
+    height: 240px;
+    width: 270px;
+    border-radius: 10px;
+
+  }
+
+  .servicePhoto {
+    height: 240px;
+    width: 270px;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .serviceContainer {
+    margin: 0;
+    width: 300px
+  }
+
+  /* .heading{
+    display: no;
+  } */
+  .body,
+  html {
+    width: 300px;
+    /* overflow-x:hidden */
+  }
+.hamburger{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+
+}
+  .hamburger li {
+    list-style: none;
+    margin: 10px;
+
+  }
+
+  .hamburger li a {
+    text-decoration: none;
+    color: #999999;
+
+  }
+  .middle-navHam h1 {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: myFirstFont;
+    letter-spacing: 1.5px;
+    color: white;
+    
+    /* letter-spacing: 20px; */
+  
+  }
+  .hamburgerContainer{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+    
+    
+  }
+  .hamburgerContainer h1{
+    padding-right: 6.5px;
+  }
+  .hamburgerContainer .fa-bars{
+    font-size: 30px;
+  }
+  /* .hamburgerContainer.hamburger{
+    display: block;
+  } */
+  .hamburger{
+    display: none;
+  }
+}

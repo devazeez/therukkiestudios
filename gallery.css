@@ -1,72 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); 
-html, body {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(180deg, #1A1A1A 85.06%, #140670 112.6%);
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-    
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #1A1A1A 85.06%, #140670 112.6%);
 
-  @font-face {
-    font-family: myFirstFont;
-    src: url(impact.ttf);
-  }
-.nav-bar{
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(impact.ttf);
+}
+
+.nav-bar {
   background: #191919;
   padding-top: 7px;
   padding-bottom: 7px;
   color: #ffff;
 }
-  .nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #191919;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    color: #ffff;
-    padding: 0px 50px 0px 50px;
-  }
 
-
-
-.nav-list{
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    color: #999999;
-    margin-right: 0;
-    
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #191919;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #ffff;
+  padding: 0px 50px 0px 50px;
 }
-  
-  .nav-list li a {
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-    color: #999999;
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 30px;
-    margin: 0px 5px 0px 5px;
-  }
-  .nav-list li a:hover{
-    color: #8EBDE9;
-  }
-.right-nav{
- justify-content: flex-end;
-}
-.left-nav{
- display: flex;
+
+
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  color: #999999;
+  margin-right: 0;
 
 }
-.fa{
+
+.nav-list li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #999999;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  margin: 0px 5px 0px 5px;
+}
+
+.nav-list li a:hover {
+  color: #8EBDE9;
+}
+
+.right-nav {
+  justify-content: flex-end;
+}
+
+.left-nav {
+  display: flex;
+
+}
+
+.fa {
   transition: all 0.3s ease 0s;
   list-style: none;
   text-decoration: none;
@@ -75,10 +83,12 @@ html, body {
   width: 24.98px;
   height: 24.98px;
 }
-.fa:hover{
+
+.fa:hover {
   color: #8EBDE9;
 }
-.middle-nav h1{
+
+.middle-nav h1 {
   font-size: 40px;
   font-weight: 400;
   font-family: myFirstFont;
@@ -87,65 +97,88 @@ html, body {
 
 }
 
-                                /* END OF NAV BAR SECTION */     
+/* END OF NAV BAR SECTION */
 
-.container{
+.container {
+  position: absolute;
+  top: 10%;
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
 }
-.photo-gallery{
+
+.photo-gallery {
   width: 90%;
   margin: auto;
   display: grid;
   grid-template-columns: auto auto auto ;
-  grid-gap: 20px;
+  grid-gap: 40px;
   margin-top: 30px;
+  margin-right: 20px;
+  
 }
-.pic{
+
+.pic {
   position: relative;
   height: 250px;
-  border-radius: 10px;
+  width: 300px;
+  border-radius: 40px;
   /* box-shadow: 2px 2px 4px lightcoral; */
   cursor: pointer;
 
 }
-.pic::before{
+
+.pic::before {
   content: attr(data-before);
   position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50% -50%);
+  align-items: center;
+  top: 125px;
+  left: 50px;
+  width: 50%;
+  height: 50%;
+  /* top: 50%;
+  left: 35%; */
+  /* transform: translate(-50% -50%); */
+  border-radius: 40px;
   color: #ffff;
   font-size: 25px;
   font-weight: bold;
-  /* width: 100%;
-  margin-top: -100%; */
+  font-family: sans-serif;
+  width: 100%;
+  margin: auto;
+  /* padding: 100px 100px; */
   opacity: 0;
   transition: .3s;
   transition-delay: .2s;
   z-index: 1;
 }
-.pic img{
+
+.pic img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 40px;
 
 }
-.pic:after{
+
+.pic:after {
   content: "";
   position: absolute;
   width: 100%;
   bottom: 0;
   left: 0;
-  border-radius: 10px;
+  border-radius: 40px;
   height: 0;
   background-color: rgba(0, 0, 0, .4);
   transition: .3s;
 }
-.pic:hover::after{
+
+.pic:hover::after {
   height: 100%;
 }
-.pic:hover::before{
+
+.pic:hover::before {
   margin-top: 0;
   opacity: 2;
 }
