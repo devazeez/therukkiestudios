@@ -140,7 +140,7 @@ img {
   display: block;
 } */
 
-@media (max-width: 280x) {
+@media (max-width: 320x) {
   .serviceCard {
     display: flex;
     flex-direction: column;
