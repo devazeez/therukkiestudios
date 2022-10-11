@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); 
+html, body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #1A1A1A 85.06%, #140670 112.6%);
+
+    
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  @font-face {
+    font-family: myFirstFont;
+    src: url(impact.ttf);
+  }
+.nav-bar{
+  background: #191919;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #ffff;
+}
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #191919;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #ffff;
+    padding: 0px 50px 0px 50px;
+  }
+
+
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: #999999;
+    margin-right: 0;
+    
+}
+  
+  .nav-list li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: #999999;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0px 5px 0px 5px;
+  }
+  .nav-list li a:hover{
+    color: #8EBDE9;
+  }
+.right-nav{
+ justify-content: flex-end;
+}
+.left-nav{
+ display: flex;
+
+}
+.fa{
+  transition: all 0.3s ease 0s;
+  list-style: none;
+  text-decoration: none;
+  margin: 10px;
+  color: #999999;
+  width: 24.98px;
+  height: 24.98px;
+}
+.fa:hover{
+  color: #8EBDE9;
+}
+.middle-nav h1{
+  font-size: 40px;
+  font-weight: 400;
+  font-family: myFirstFont;
+  letter-spacing: 1.5px;
+  /* letter-spacing: 20px; */
+
+}
+/* END */
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.input{
+    width: 210px;
+    height: 35px;
+    background-color: #333333;
+    color: #999999;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    /* font-family: ; */
+}
+
+option{
+    margin: 10px;
+    height: 10px;
+}
+.form-conatiner form .form-row{
+    display: flex;
+    margin: 32px 0;
+}
+
+/* .form-conatiner form .form-row{
+
+} */
+
+/* .container{
+    display: flex;
+    justify-content: space-around;
+} */
+
+.text{
+
+  display: flex;
+  justify-content: space-around;
+  /* font-family: t; */
+}
+
+.submit-btn{
+
+  display: flex;
+  justify-content: space-around;
+
+}
+
+input[type=submit] {
+  /* Your Code Here */ 
+  background-color: #8EBDE9;
+  border-radius: 15px;
+  width: 90px;
+  height: 50px;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: #333333;
+    width: 200px;
+  }
+
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 1170px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #999999;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color:  #333333;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    width: 200px;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }

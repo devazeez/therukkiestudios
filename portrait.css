@@ -87,7 +87,22 @@ html, body {
 
 }
 
-                                /* END OF NAV BAR SECTION */     
+
+
+
+
+
+
+
+/* END OF NAV BAR SECTION */     
+
+/* .one { grid-area: header; }
+.two { grid-area: menuu; }
+.three { grid-area: main; }
+.four { grid-area: right; }
+.five { grid-area: left; }
+.six { grid-area: center; } */
+
 
 .container{
   width: 100%;
@@ -97,7 +112,7 @@ html, body {
   width: 90%;
   margin: auto;
   display: grid;
-  grid-template-columns: auto auto auto ;
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
   margin-top: 30px;
 }
@@ -113,7 +128,7 @@ html, body {
   content: attr(data-before);
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 25%;
   transform: translate(-50% -50%);
   color: #ffff;
   font-size: 25px;
